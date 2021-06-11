@@ -1,4 +1,4 @@
-# Stage 2: The different stages to learning how to deploy a Laravel App
+# Stage 3: The different stages to learning how to deploy a Laravel App
 
 ## Intro
 
