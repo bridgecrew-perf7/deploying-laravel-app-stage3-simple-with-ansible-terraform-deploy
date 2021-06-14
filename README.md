@@ -28,7 +28,7 @@ We'll also start making the system more robust to hand a single server falling o
 1. You have a server.
 1. In this example and future ones, we'll be deploying to [DigitalOcean](https://m.do.co/c/179a47e69ec8)
    but the steps should mostly work with any servers.
-1. The server is running Ubuntu 20.04
+1. The server is running Ubuntu 20.04 or Kubernetes cluster.
 1. You have SSH key pair.
 1. Needed to log into your server securely.
 1. You have a Domain Name, and you can add entries to point to the server.
@@ -654,7 +654,7 @@ Remember to run the scripts to set the required environment variables. Once that
 the plan.
 
 ```shell
-cd Stage_2/infra/terraform
+cd ./infra/terraform
 setLvDepProfile
 terraform apply
 ```
@@ -679,7 +679,7 @@ REDIS_PASSWORD=25061
 REDIS_PORT=qvkpta852dzgkzi9
 ```
 
-Copy this into the ```Stage_2/infra/ansible/roles/deployment/templates/laravel_env.j2``` file.
+Copy this into the ```./infra/ansible/roles/deployment/templates/laravel_env.j2``` file.
 
 Once you have done that, go to the Ansible [directory](./infra/Ansible). Update the ```hosts.ini```
 to add any missing servers.
